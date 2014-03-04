@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>deeltoets 1</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'></head>
+<body>
+	<header>Aanmelden</header>
+	<nav> </nav>
+	<section> 
+		<article>
+			<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+			Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+			<p><i> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam</i></p>
+			<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+			Voor vragen of opmerkingen kunt u <a class="textlink" href="deeltoets.1.form.html">contact</a> met ons op</p>
+		</article>
+		<article>
+		<h1>Contactgegevens</h1>
+		<fieldset>
+			<label for"name">Naam</label>
+			<input id="name" placeholder="Jan Stelt">
+			<label for="comp">Bedrijf</label>
+			<input id="comp" placeholder="Bedrijfsnaam">
+			<label for="adress">Adres</label>
+			<input id="adress" placeholder="Koolmeesweg 45">
+			<label for="postal">Postcode</label>
+			<input id="postal" placeholder="1098BG">
+			<label for="city">Plaats</label>
+			<input id="city" placeholder="Nederland">
+			<label for="phone">Telefoon</label>
+			<input id="phone" placeholder="06-38316354">
+			<label for="mail">Email</label>
+			<input id="mail" placeholder="naam@stelt.nl">
+		</fieldset>
+	</article>
+	<article>
+		<h1>Aanmelden</h1>
+		<div id="choice">
+			<fieldset>
+			<label for="enter">Ik wil mij aanmelden...</label>
+			<input type="radio" name="sort" class="desc" value="sort">Voor een project 
+			<input type="radio" name="sort" class="desc" value="sort">Voor een stage
+	    	</fieldset>
+		</div>
+    </article>
+    <article id="project" class="desc">
+    	<h1>Project</h1>
+	    	<fieldset>
+				<label for="title">Titel</label>
+				<textarea rows="3" cols="40"></textarea>	
+	    		<label for="description">Opdrachtomschrijving</label>
+				<textarea rows="10" cols="50"></textarea>	
+				<label for="goal">Doelstelling van het project</label>
+				<textarea rows="10" cols="50"></textarea>	
+				<label for="stay">Looptijd</label>
+				<input id="time" placeholder="10">Weken
+				<label for="deadline">Deadline</label>
+				<input id="deadline" placeholder="dd-mm-jj">
+			</fieldset>
+			<fieldset>
+				<label for="time">Geschikt voor...</label>
+				<input type="radio" name="two" value="year">Eerstejaars studenten
+				<input type="radio" name="two" value="year">Tweedejaars studenten
+				<input type="radio" name="two" value="year">Derdejaars studenten
+				<input type="radio" name="finishing" value="year">Afstudeer studenten
+				<input type="radio">Onbekend
+			</fieldset>
+			<fieldset>
+				<label for="description">Opmerking</label>
+				<textarea rows="10" cols="50"></textarea>
+			</fieldset>
+	</article>
+    <article id="stage" class="desc" style="display: none;">
+    	<h1>Stage</h1>
+	    	<fieldset>
+	    		<label for="time">Geschikt voor...</label>
+				<input type="radio" name="two" value="year">Tweedejaars studenten
+				<input type="radio" name="finishing" value="year">Afstudeer studenten
+				<input type="radio">Onbekend
+			</fieldset>
+			<fieldset>
+	    		<label for="time">Duur van de stage</label>
+				<input type="radio" name="ten" value="number">Tien Weken 
+				<input type="radio" name="twenty" value="number">Twintig Weken
+				<input type="radio">Onbekend
+				<label for="date">Begin datum van de stage</label>
+				<input id="date" placeholder="dd-mm-jj">
+			</fieldset>
+			<fieldset>
+				<label for="description">Beschrijving werkzaamheden</label>
+				<textarea rows="10" cols="50"></textarea>
+			</fieldset>
+			<h1>Contactgegevens van het stagebedrijf</h1>
+			<fieldset>
+				<label for="comp">Bedrijfsnaam</label>
+				<input id="comp" placeholder="Bedrijfsnaam">
+				<label for="adress">Adres</label>
+				<input id="adress" placeholder="Koolmeesweg 45">
+				<label for="postal">Postcode</label>
+				<input id="postal" placeholder="1098BG">
+				<label for="city">Plaats</label>
+				<input id="city" placeholder="Nederland">
+				<label for="sector">Sector</label>
+				<input id="sector" placeholder="sector omschrijving">
+				<label for="business">Core Business</label>
+				<input id="business" placeholder="ontwerpen">
+			</fieldset>
+			<fieldset>
+				<label for="description">Opmerking</label>
+				<textarea rows="10" cols="50"></textarea>
+			</fieldset>
+    </article>
+	</section>
+	<footer>deeltoets 1 - formulier</footer>
+	<script>
+	$(document).ready(function() {
+			$("input[name$='sort']").click(function() {
+				var test = $(this).val();
+
+				$("div.desc").hide();
+				$("#stage" + test).show();
+			});
+		});
+	</script>
+</body>
+</html>

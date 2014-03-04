@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>deeltoets 1 form</title>
+	<link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>Aanmelden</header>
+	<article>
+		<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+		Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+		<p><i> CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam</i></p>
+		<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+		Voor vragen of opmerkingen kunt u <a class="textlink" href="deeltoets.1.form.html">contact</a> met ons op</p>
+	</article>
+	<section>
+		<form>
+			<h1>Contactgegevens</h1>
+			<fieldset>
+				<legend>Vul in...</legend>
+				<ol>
+					<li><label for="name">Naam</label>
+					<input id="name" placeholder="Jan Stelt"></li>
+					<li><label for="comp">Bedrijf</label>
+					<input id="comp" placeholder="Bedrijfsnaam"></li>
+					<li><label for="adress">Adres</label>
+					<input id="adress" placeholder="Koolmeesweg 45"></li>
+					<li><label for="postal">Postcode</label>
+					<input id="postal" placeholder="1098BG"></li>
+					<li><label for="town">Plaats</label>
+					<input id="town" placeholder="Nederland"></li>
+					<li><label for="phone">Telefoon</label>
+					<input id="phone" placeholder="06-38316354"></li>
+					<li><label for="mail">Email</label>
+					<input id="mail" placeholder="naam@stelt.nl"></li>
+				</ol>
+			</fieldset>	
+		</form>
+		<form>
+			<fieldset>
+				<legend>Aanmelden...</legend>
+				<label for="project">Voor een project</label>
+				<input id="project" type="radio" name="sort" value="sort">
+				<label for="stage">Voor een stage</label>
+				<input id="stage" type="radio" name="sort" value="sort">
+	    	</fieldset>
+		</form>    
+    </section>
+    <section>
+    	<form>
+    		<h1>Project</h1>
+    		<fieldset>
+		    	<legend>Vul in...</legend>
+		    	<ol>
+					<li><label for="title">Titel</label>
+					<textarea id="title" rows="3" cols="40"></textarea></li>
+		    		<li><label for="description">Opdrachtomschrijving</label>
+					<textarea id="description" rows="10" cols="50"></textarea></li>
+					<li><label for="goal">Doelstelling van het project</label>
+					<textarea id="goal" rows="10" cols="50"></textarea></li>
+					<li><label for="stay">Looptijd in weken</label>
+					<input id="stay" placeholder="bv. 10"></li>
+					<li><label for="deadline">Deadline</label>
+					<input id="deadline" placeholder="dd-mm-jj"></li>
+				</ol>
+			</fieldset>
+			<fieldset>
+				<legend>Geschikt voor...</legend>
+				<label for="SelectYear">Selecteer</label>
+		     	<select id="SelectYear">
+			        <option value = "1">1e jaars student</option>
+			        <option value = "2">2e jaars student</option>
+			        <option value = "3">3e jaars student</option>
+			        <option value = "4">4e jaars student</option>
+			        <option value = "5">Onbekend</option>
+		    	</select>
+			</fieldset>
+		</form>
+	</section>
+    <section>
+    	<form>
+    		<h1>Stage</h1>
+    		<fieldset>
+		    	<legend>Geschikt voor...</legend>
+		    	<label for="SelectStudent">Selecteer</label>
+		    	<select id="SelectStudent">
+	    			<option value = "1">1e jaars student</option>
+			        <option value = "2">Afstudeer student</option>
+			        <option value = "3">Onbekend</option>
+			    </select> 
+			</fieldset>
+			<fieldset>
+	    		<legend>Duur van de stage is...</legend>
+	    		<ol>
+		    		<li><label for="SelectWeeks">Selecteer</label>
+		    			<select id="SelectWeeks">
+							<option value = "1">10 weken</option>
+					        <option value = "2">20 weken</option>
+					        <option value = "3">Onbekend</option>
+					    </select></li>
+					<li><label for="date">Begin datum van de stage</label>
+					<input id="date" placeholder="dd-mm-jj"></li>
+				</ol>	
+			</fieldset>
+			<fieldset>
+				<legend>Werkzaamheden stage</legend>
+				<label for="description">Beschrijving werkzaamheden</label>
+				<textarea rows="10" cols="50"></textarea>
+			</fieldset>
+			<h2>Contactgegevens van het stagebedrijf</h2>
+			<fieldset>
+				<legend>vul in...</legend>
+				<ol>
+					<li><label for="company">Bedrijfsnaam</label>
+					<input id="company" placeholder="Bedrijfsnaam"></li>
+					<li><label for="compadress">Bedrijfs Adres</label>
+					<input id="compadress" placeholder="Koolmeesweg 45"></li>
+					<li><label for="comppostal">Postcode</label>
+					<input id="comppostal" placeholder="1098BG"></li>
+					<li><label for="city">Plaats</label>
+					<input id="city" placeholder="Nederland"></li>
+					<li><label for="sector">Sector</label>
+					<input id="sector" placeholder="sector omschrijving"></li>
+					<li><label for="business">Core Business</label>
+					<input id="business" placeholder="ontwerpen"></li>
+				</ol>
+			</fieldset>
+			<fieldset>
+				<legend>Opmerking</legend>
+				<ol>
+					<li><label for="comment">Typ hier je opmerking...</label>
+					<textarea id="comment" rows="10" cols="50"></textarea></li>
+				</ol>
+			</fieldset>
+		</form>
+    </section>
+	<footer>deeltoets 1 - formulier</footer>
+</body>
+</html>
